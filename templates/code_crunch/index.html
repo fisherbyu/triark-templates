@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block head %}
+<title>Home</title>
+{% endblock head %}
+{% block body %}
+{% for emp in emps %}
+    <a href="{% url 'display' empID=emp.empID %}"><button>{{ emp.first_name }} {{ emp.last_name }}</button></a>
+    <br>
+{% endfor %}
+    <br>
+    <a href="{% url 'displayAll' %}"><button>Display All Emails</button></a>
+{% endblock body %}

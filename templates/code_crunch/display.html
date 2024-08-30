@@ -1,0 +1,19 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<title>{{ emp.first_name }} {{ emp.last_name }}</title>
+{% endblock head %} {% block body %}
+<a href="{% url 'index' %}">Home</a>
+<h1>Emails for {{ emp.first_name }} {{ emp.last_name }}</h1>
+{% for block in blocks %}
+<div>
+  <form>
+    <input
+      name="val"
+      type="hidden"
+      value="{{ header }} {{ block.content }} {{ signature }}  {{ footer }}"
+    />
+    <button onclick="copy(this.form)">{{ block.title }}</button>
+  </form>
+</div>
+<br />
+
+{% endfor %} {% endblock body %}

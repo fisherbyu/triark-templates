@@ -1,0 +1,21 @@
+{% extends 'base.html' %} {% load static %} {% block head %}
+<title>Display All Emails</title>
+{% endblock head %} {% block body %}
+<a href="{% url 'index' %}">Home</a>
+<h1>All Emails</h1>
+<div id="render"></div>
+{% for email in emails %}
+<div>
+  <form>
+    <input name="val" type="hidden" value="{{ email.content }}" />
+    <button onclick="copy(this.form)">{{ email.title }}</button>
+  </form>
+  {% comment %}
+  <form>
+    <input name="val" type="hidden" value="{{ email.content }}" />
+    <button onclick="send(this.form)">Render: {{ email.title }}</button>
+  </form>
+  {% endcomment %}
+</div>
+<br />
+{% endfor %} {% endblock body %}
