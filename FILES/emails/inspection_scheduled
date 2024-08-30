@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <style>
+        body {font-family: 'Roboto', sans-serif;}
+        .bordertest {border: solid black;}
+        .headicon {width: 200px; margin: auto; display: block;}
+        .signblock {display: flex; align-items: center; width: 250px; height:fit-content}
+        .xbrd {border: 1pt black solid;}
+        .signimg {width: 86px; border-right: 1px solid black; padding: 2px; padding-right: 10px;}
+        .signtext {width: 55%; height: 100%; padding: 2px; margin-left: 6px; display: flex; align-items: center;}
+    </style>
+    
+</head>
+<body>
+    <img class="headicon" src="https://app.jobnimbus.com/files/kzdnrivz9khfhjyhaznaqh1" alt="" /><br />
+    <br>
+    <span>
+        <p>
+            Hi {{JobPrimaryContactFirstName}},
+            <br>
+            <br>
+            Thanks so much for scheduling an inspection! You are in our schedule on: {{TaskDateStart}} at: {{TaskTimeStart}}
+            <br>
+        </p>
+    </span>
+
+    <div class="signblock brd">
+        <img class="signimg" src="https://app.jobnimbus.com/files/kzdnz4vnw1fuil8a68n5pca" alt="" />
+        <div class="signtext brd">
+            <p>
+                Triark Roofing
+                <br>
+                (916) 276-8632
+            </p>
+        </div>
+
+    </div>
+    
+    <br>
+    
+</body>
+</html>

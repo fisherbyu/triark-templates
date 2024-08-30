@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Bot</title>
+</head>
+<body>
+    <form>
+        <label for="num">How Many?:</label>
+        <input type="number" name="num" id="num" required>
+        <br><br>
+        <label for="sign">Signature:</label>
+        <input id="sign" name="sign" type="text">
+        <br><br>
+        <label for="style">Styles:</label>
+        <input id="style" name="style" type="text">
+        <br><br>
+        <label for="triark">Triark:</label>
+        <input type="radio" id="triark" name="sign" value="triark">
+        <label for="jh">Jay Hancock:</label>
+        <input type="radio" id="jh" name="sign" value="jh">
+        <label for="bf">Barbara Fisher:</label>
+        <input type="radio" id="bf" name="sign" value="bf">
+        <button type="submit" onclick="emailBot(this.form)">Submit</button>
+    </form>
+    <script>
+        function emailBot(input) {
+            let open = '<!DOCTYPE html> \n<html lang="en"> \n<head> \n    <meta charset="UTF-8"> <meta http-equiv="X-UA-Compatible" content="IE=edge"> <meta name="viewport" content="width=device-width, initial-scale=1.0"> \n    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">';
+            open = open + input.style.value;
+            open = open + '</head>\n<body>\n';
+
+        }
+
+        var fs = require('fs');
+        var text = fs.readFileSync("content.txt", 'utf-8');
+        var textByLine = text.split('\n');
+        alert(textByLine);
+
+    </script>
+    <div id="out"></div>
+</body>
+</html>

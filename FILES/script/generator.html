@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <p id="output">
+        empty
+        
+    </p>
+    <script>
+        var sHalf1 = '<!DOCTYPE html>\n<html lang="en">\n<head>\n    <meta charset="UTF-8">\n    <meta http-equiv="X-UA-Compatible" content="IE=edge">\n    <meta name="viewport" content="width=device-width, initial-scale=1.0">\n    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">\n    <style>\n        body {font-family: \'Roboto\', sans-serif;}\n        .headicon {width: 200px; margin: auto; display: block;}\n    </style>\n</head>\n<body>\n    <img class="headicon" src="https://app.jobnimbus.com/files/kzdnrivz9khfhjyhaznaqh1" alt="" /><br />\n    <br>\n    <span>\n        <p>';
+        var sHalf2 = ' </p>\n    </span>\n\n    <div>\n        <table style="border-spacing:0px;border-collapse:collapse;background-color:#ffffff;color:#444444;width:450px;" cellspacing="0" cellpadding="0" border="0">\n            <tbody style="box-sizing:border-box;">\n                <tr style="box-sizing:border-box;">\n                    <td style="border-right:3px solid rgb(0, 0, 0);padding:0 16px;display:flex;justify-content:center;align-items:center;width:100px;height:100px;">\n                        <div id="repPic" borders="0" class="ng-scope" style="width:100%;">\n                            {{{ContactSalesRepImage}}}\n                        </div>\n                    </td>\n                    <td style="box-sizing:border-box;padding:0px 0px 0px 8px;font-size:14px;vertical-align:middle;text-align:center;" valign="top">\n                        <div style="text-align:left;">\n                            <p style="font-size:small;box-sizing:border-box;">\n                                <span style="font-size:medium;font-weight:700;color:#000000;">\n                                    {{ContactSalesRepName}}\n                                </span>\n                                <br>\n                                <span>\n                                    Triark Roofing\n                                    <br>\n                                    (916) 276-8632 \n                                </span>\n                            </p>\n                        </div>\n                    </td>\n                </tr>\n            </tbody>\n        </table>\n    </div>\n        \n    <style>\n        #repPic{\n            height: 100px !important; \n            margin-left: auto;\n            margin-right: auto;\n        }\n        #repPic img{\n            height: 100%; \n            width: 100%; \n            object-fit: contain;\n        }\n        #logoPic{\n            height: 40px !important;\n            max-width: 150px;\n            margin-left: auto;\n            margin-right: auto;\n        }\n        #logoPic img{\n            height: 100%; \n            width: 100%; \n            object-fit: contain;\n        }\n    </style>\n    \n</body>\n</html>';
+        var Inner = prompt("Enter EMail Text: ");
+        var textOut = sHalf1 + Inner + sHalf2;
+        
+        document.getElementById("output").innerText = textOut;
+    </script>
+    
+</body>
+</html>

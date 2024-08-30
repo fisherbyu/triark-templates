@@ -1,0 +1,52 @@
+<div>
+    <table style="border-spacing:0px;border-collapse:collapse;background-color:#ffffff;color:#444444;width:450px;" cellspacing="0" cellpadding="0" border="0">
+        <tbody style="box-sizing:border-box;">
+            <tr style="box-sizing:border-box;">
+                <td style="border-right:3px solid rgb(0, 0, 0);padding:0 16px;display:flex;justify-content:center;align-items:center;width:100px;height:100px;">
+                    <div id="repPic" borders="0" class="ng-scope" style="width:100%;">
+                        {{{ContactSalesRepImage}}}
+                    </div>
+                </td>
+                <td style="box-sizing:border-box;padding:0px 0px 0px 8px;font-size:14px;vertical-align:middle;text-align:center;" valign="top">
+                    <div style="text-align:left;">
+                        <p style="font-size:small;box-sizing:border-box;">
+                            <span style="font-size:medium;font-weight:700;color:#000000;">
+                                {{ContactSalesRepName}}
+                            </span>
+                            <br>
+                            <span>
+                                Triark Roofing
+                                <br>
+                                (916) 276-8632 
+                            </span>
+                        </p>
+                    </div>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+    
+<style>
+    #repPic{
+        height: 100px !important; 
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #repPic img{
+        height: 100%; 
+        width: 100%; 
+        object-fit: contain;
+    }
+    #logoPic{
+        height: 40px !important;
+        max-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #logoPic img{
+        height: 100%; 
+        width: 100%; 
+        object-fit: contain;
+    }
+</style>
